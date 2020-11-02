@@ -34,8 +34,8 @@ class SingInForm extends React.Component {
                 <form onSubmit={this.handleSubmit} >
                     <div>
                         <h1>sing in to your acount</h1>     
-                        <input className="input-text" type="email" value={this.state.email} onChange={this.handleChangeEmail} placeholder/>
-                        <input className="input-text" type="password" value={this.state.password} onChange={this.handleChangePassword} placeholder/>
+                        <input className="input-text" type="email" onChange={this.handleChangeEmail} placeholder={this.state.email}/>
+                        <input className="input-text" type="password" onChange={this.handleChangePassword} placeholder={this.state.password} required/>
                         <label>
                             
                             <input type="checkbox" required/>
